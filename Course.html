@@ -16,17 +16,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
+  <!--Saffan-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  
   <link rel="stylesheet" href="./css/courses_ext.css">
+
     <style>
       #bg-img{
           background-image: url(img/board1.jpg);
-          height: 60vh;
+          height: 80vh;
           width: 100%;
           text-transform: uppercase;
           background-size: cover;
           background-position: center;
-          
+      }
+      .overlay{
+      background: rgba(0, 0, 0, 0.248);
+      height: 80vh;
+      width: 100%;
+    }
+      #About {
+          padding-top: 20%;
+          font-weight: 600;
+          color: #fff;
+      }
 
+      #para {
+          padding-left:20% ;
+          padding-right:20% ;
+          line-height: 2;
+          font-size: 17px;
+          color: #fff;
       }
        .course-1{
         font-family: 'Poppins', sans-serif;
@@ -45,15 +68,23 @@
 </head>
 <body>
   <!--Header COmponent FRom Abdullah-->
-  <img src="./img/logo2.png" class="p-3" height="120" alt="">
-    <span class="lead">Govt: Institute Of Business And Commercial Education</span>
-    <span class="lead text-warning" style="margin-left:25%; cursor: pointer;;">
-        <i class="fas fa-map-marker-alt"></i> Latifabad No:9, Hyderabad &nbsp;
-    </span>
-    <span class="lead text-info" style="cursor: pointer;;">
-        <i class="fas fa-phone-alt"></i> 
-        1-800-346-6277
-    </span>
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <img src="./img/logo2.png" class="p-3" height="120" alt="">
+        <span class="lead">Govt: Institute Of Business And Commercial Education</span>
+      </div>
+      <div class="col-lg-6">
+        <span class="lead text-warning" style="margin-left:25%; cursor: pointer;;">
+          <i class="fas fa-map-marker-alt"></i> Latifabad No:9, Hyderabad
+        </span>
+        <span class="lead text-info" style="cursor: pointer;;">
+          <i class="fas fa-phone-alt"></i> 
+          1-800-346-6277
+        </span>
+      </div>
+    </div>
+  </div>
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fa9046;">
         <a class="navbar-brand text-dark" href="#">
             <img src="./img/GIBCE.png" height="40" alt="">
@@ -88,7 +119,10 @@
       </marquee>
      
 <div id="bg-img">
-  <h1 class="course-1">Courses</h1> 
+    <div class="overlay">
+        <h3 class="text-center"id="About">Courses</h3>
+        <div class="text-center" id="para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.</div>
+    </div>   
 </div>
     <div class="container">
         <div class="row ">
