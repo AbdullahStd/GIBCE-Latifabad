@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bg-image {
@@ -11,31 +12,48 @@
     height: 85vh;
 }
 
+@media screen and (max-width:400px)
+{
+    .bg-image {
+        height: 600px;
+    }
+}
+
 .overlay {
     background: rgba(0, 0, 0, 0.322);
     height: 85vh;
 }
-@media (max-width: 600px) {
-    .bg-image {
-        height: 50vh !important; 
+
+@media screen and (max-width:400px)
+{
+    .overlay {
+        height: 600px;
     }
-    .overlay{
-        height:50vh !important; 
-        background: rgba(0, 0, 0, 0.322);
-    }
-  }
+}
+
 #About {
     padding-top: 20%;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 35px;
     color: #fff;
 }
 
 #para {
-    padding-left:20% ;
-    padding-right:20% ;
+    padding-left:22% ;
+    padding-right:22% ;
     line-height: 2;
     font-size: 17px;
     color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media screen and (max-width:400px)
+{
+    #para
+    {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:800px)
@@ -52,16 +70,23 @@
 .line-1 {
     font-size: 30px;
     padding-bottom: 10px;
+    line-height: 1.9;
+}
+
+.line-1 > span {
+    color: orange;
 }
 
 .line-2 {
     padding-top: 10px;
     padding-bottom: 20px;
+    line-height: 1.9;
 }
 
 .line-3 {
-    padding-top: 10px;
+    
     padding-bottom: 20px;
+    line-height: 1.9;
 }
 
 .btn {
@@ -75,7 +100,7 @@
     width: 35px;
 }
 .btn:hover {
-    background: rgb(255, 60, 0);;
+    background: rgb(238, 204, 15);
     color: #fff;
 }
 
@@ -97,6 +122,7 @@
 
 #four-cards {
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .cdn >i {
@@ -115,6 +141,7 @@
 .fancy-para
 {
     padding: 10px 0px 10px 0px;
+    line-height: 1.7;
 }
 
 #icons-area {
@@ -139,21 +166,36 @@
 
 #cover-body {
     cursor: pointer;
+    
     border-radius: 20px;
-    transition: .2s ease all;
+    /* background: rgba(224, 218, 218, 0.109); */
+    background-image:linear-gradient(#FFCC2F,#EF5734);
     border: none;
-    box-shadow: .5px .5px ;
+    box-shadow: 0px 0px 2px grey;
+    transition: .9s ease all;
+    color: #fff;
+    
 }
 #cover-body > img {
     height:100px ;
-    width: 22%;
+    width: 20%;
     background-size:cover;
     background-position:center ;
 }
 
+@media screen and (max-width:400px)
+{
+    #cover-body > img {
+        height: 100px;
+        width: 28%;
+        
+    }
+}
+
 #cover-body:hover {
-    background: rgba(255, 255, 255, 0.082);   
-    background: rgba(155, 152, 152, 0.062);
+    background-image:rgb(187, 176, 176);   
+    background-image:linear-gradient(#c59810,#9b3018);
+    
 }
 
 #inform
@@ -168,7 +210,6 @@
 }
 
 #title{
-    
     color: rgba(98, 99, 93, 0.599);
 }
 
@@ -200,5 +241,159 @@
 
 .authority
 {
+    padding-left: 40px;
     line-height: 2;
+}
+#headingz {
+    font-size: 30px;
+    font-weight: 600;
+}
+#headingz > span {
+    color: orange;
+}
+
+@media screen and (max-width:400px)
+{
+    #headingz {
+        text-align: center;
+    }
+}
+#about-us > span {
+    color: orange;
+}
+
+
+#about-us {
+    font-size: 30px;
+}
+
+@media screen and (max-width:400px)
+{
+    #about-us {
+        text-align: center;
+        
+    }
+}
+
+#vision-head {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#visions 
+{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#visions  > span {
+    color: orange;
+    font-weight: 600;
+}
+
+@media screen and (max-width:400px)
+{
+    #visions {
+        text-align: center;
+        margin-top:20px ;
+    }
+    #vision-head {
+        text-align: center;
+    }
+}
+
+.stylish-card {
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 1px gray;
+    padding: 5px;
+}
+
+@media screen and (max-width:800px)
+{
+    .stylish-card {
+        margin-top: 30%;
+    }
+}
+
+.circle-image-1 {
+    background-image:url('../img/1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 3px solid orange;
+    position: relative;
+    top: -60px;
+    display: inline-block;
+    text-align: center;
+    transition: .4s ease all;
+    cursor: pointer;
+    
+}
+
+.circle-image-1:hover {
+    transform: translateY(-9px);
+}
+
+.circle-image-2{
+    background-image:url('../img/2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 3px solid orange;
+    position: relative;
+    top: -60px;
+    display: inline-block;
+    text-align: center;
+    transition: .4s ease all;
+    cursor: pointer;
+    
+}
+.circle-image-2:hover {
+    transform: translateY(-9px);
+}
+
+.circle-image-3 {
+    background-image:url('../img/3.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 3px solid orange;
+    position: relative;
+    top: -60px;
+    display: inline-block;
+    text-align: center;
+    transition: .4s ease all;
+    cursor: pointer;
+    
+}
+.circle-image-3:hover {
+    transform: translateY(-9px);
+}
+.stars {
+    position: relative;
+    top: -40px;
+    color: orange;
+}
+
+.teacher-inform
+{
+    position: relative;
+    top: -20px;
+    padding: 10px;
+}
+#teacher-name{
+    font-weight: 700;
+}
+
+#muted-text {
+    letter-spacing: 2px;
+    font-size: 12px;
 }
