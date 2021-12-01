@@ -1,11 +1,13 @@
 html{
   scroll-behavior: smooth;
+  
 }
 @media (max-width: 600px) {
   .container-fluid {
     text-align: center;
     justify-content: center;
   }
+ 
 }
 #myBtn {
     display: none; 
@@ -24,11 +26,12 @@ html{
     padding: 10px 15px; 
     border-radius: 10px; 
     font-size: 18px; 
+    transition: .3s ease all;
 
   }
   
   #myBtn:hover {
-    background-color: #fa9046; 
+    background-color: orange; 
   }
   @media (max-width: 600px) {
     #myBtn {
@@ -53,4 +56,7 @@ html{
   }
   .container-fluid{
     user-select: none;
+  }
+  nav li{
+    font-weight: 500;
   }
