@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
+    <link rel="shortcut icon" href="../GIBCE/img/icoForLink.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../GIBCE/css/home.css">
+    <!-- B to T button starts-->
+    <link rel="stylesheet" href="../GIBCE/css/webTop.css">
+    <!--B to T button ends end-->
     <!--Home's Links-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="../GIBCE/css/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--End links-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    
     <link rel="stylesheet" href="./css/About.css">
 </head>
 <body>
@@ -25,16 +26,17 @@
     <div class="row d-flex justify-content-between align-items-center">
       <div class="col-lg-6">
         <img src="./img/logo2.png" class="p-3" height="120" alt="">
-        <span class="lead">Govt: Institute Of Business And Commercial Education</span>
+        <div class="lead" style="display: inline-flex;">
+          <strong>Govt: Institute Of Business And Commercial Education</strong>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <span class="lead text-warning" style="margin-left:25%; cursor: pointer;;">
+      <div class="col-lg-6 text-center">
+        <div class="lead text-warning" style=" cursor: pointer;;">
           <i class="fas fa-map-marker-alt"></i> Latifabad No:9, Hyderabad
-        </span>
-        <span class="lead text-info" style="cursor: pointer;;">
-          <i class="fas fa-phone-alt"></i> 
-          1-800-346-6277
-        </span>
+        </div>
+        <div class="lead text-info" style=" cursor: pointer;;">
+          <i class="fas fa-phone-alt"></i> 0304-####### 
+        </div>
       </div>
     </div>
   </div>
@@ -49,13 +51,13 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav text-center">
-        <li class="nav-item active">
-          <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="index.html">Home</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link text-light" href="./Course.html">Courses</a>
         </li>
-        <li class="nav-item ">
+        <li class="nav-item  active">
           <a class="nav-link text-light" href="About.html">About</a>
         </li>
         <li class="nav-item ">
@@ -64,19 +66,20 @@
       </ul>
     </div>
   </nav>
-  <marquee  behavior="" direction="" class="bg-light p-3 lead">
+  <marquee onmouseover="this.stop();" onmouseout="this.start();" class="bg-light p-3 lead">
     <strong>
-      D.I.T( 1 Year Diploma In Information Technology ),
-      D.COM( 2 Years Diploma In Commerce ),      
-      NAVTTCC Programs
-    </strong>
+      <span class="text-info">D.I.T </span>(1 Year Diploma In Information Technology) &nbsp;&nbsp;
+      <span class="text-info">D.COM </span>(2 Years Diploma In Commerce) &nbsp;&nbsp;
+      <span class="text-info">ShortHand </span>(1 Year Diploma In English Shorthand & English TypeWriting) &nbsp;&nbsp;
+      <span class="text-info">NAVTTCC Programs </span>(C.I.T, Computer Accounting & Office Automation) &nbsp;&nbsp;
+     </strong>
   </marquee>
   <!--Header ends-->
     <!-- IMAGE AREA  START-->
     <div class="bg-image">
         <div class="overlay">
-            <h3 class="text-center"id="About">ABOUT</h3>
-            <div class="text-center" id="para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.</div>
+            <h3 class="text-center" id="About">ABOUT</h3>
+            <div class="text-center" id="para">________________________________</div>
         </div>
     </div>
     <!-- IMAGE AREA  END-->
@@ -128,10 +131,10 @@
     </div>
 
     <div class="container-fluid mt-5">
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center text-center  mb-5">
                 <div class="col-sm-5 rounded-circle pt-5" >
                   <div class="card" id="cover-body">
-                      <img src="./img/5.jpg" alt="" class="rounded-circle m-3 ">
+                      <img src="./img/5.jpg" alt="" class="rounded-circle m-3 mx-auto">
                     <div class="card-body" id="card-body">
                       <h5 class="card-title names">Peter McMillian</h5>
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -143,7 +146,7 @@
                 </div>
                 <div class="col-sm-5 rounded-circle pt-5" >
                   <div class="card" id="cover-body">
-                    <img src="./img/6.jpg" alt="" class="rounded-circle m-3 ">
+                    <img src="./img/6.jpg" alt="" class="rounded-circle m-3 mx-auto">
                     <div class="card-body" id="card-body">
                       <h5 class="card-title names ">Jone Smith</h5>
                       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -155,7 +158,7 @@
                 </div>
                 <div class="col-sm-5 rounded-circle pt-5" >
                     <div class="card" id="cover-body">
-                        <img src="./img/7.jpg" alt="" class="rounded-circle m-3 ">
+                        <img src="./img/7.jpg" alt="" class="rounded-circle m-3 mx-auto">
                       <div class="card-body" id="card-body">
                         <h5 class="card-title names">Samantha Lee</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -167,7 +170,7 @@
                   </div>
                   <div class="col-sm-5 rounded-circle pt-5" >
                     <div class="card" id="cover-body">
-                        <img src="./img/8.jpg" alt="" class="rounded-circle m-3">
+                        <img src="./img/8.jpg" alt="" class="rounded-circle m-3 mx-auto">
                       <div class="card-body" id="card-body">
                         <h5 class="card-title names">Kate Wilson
                         </h5>
@@ -178,15 +181,16 @@
                       </div>
                     </div>
                   </div>
-                  <h3 class="p-5   ">Training Authority</h3>
-                  <div class="authority ">In Sindh, TEVT education (prior to establishment of Sindh TEVTA) was offered in a fragmented manner under three departments viz.
+                  
+                  <h3 class="p-5">Training Authority</h3>
+                  <div class="authority p-3">In Sindh, TEVT education (prior to establishment of Sindh TEVTA) was offered in a fragmented manner under three departments viz.
                     Education & Literacy, Labour & Manpower and Social Welfare. The Education & Literacy department were managing 36 institutions, and the social welfare
                    department were managing 16 institutions. The departments were performing overlapping functions, especially in the area of Vocational Training Moreover,
                    the infrastructure of these institutions in terms of buildings, equipment & machinery and teaching faculty did not meet National and International standards 
                    and requirements of the market-needs...
                  </div>
-                 <h3 class="p-5   ">Technical Education</h3>
-                 <div class="authority ">
+                 <h3 class="p-5">Technical Education</h3>
+                 <div class="authority p-3">
                    Keeping in view of the changing domestic and international labour market requirements and in line with the scheme of reorganization of TEVT institutions adopted by
                    other provinces, Sindh Technical Education and Vocational Training Authority (Sindh TEVTA) was established through Sindh TEVTS ordinance, 2007 (Ordinance XVII of 2007)
                    to streamline the Technical Education and Vocational Training in the province. After the approval of the Sindh cabinet in its meeting held on 28th February 2009, the
@@ -200,8 +204,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col p-5">
-            <h2 class="p- mt-5   ">About Our  Educational Center</h2>
-            
+            <h2 class="mt-5">About Our Educational Center</h2>
             <h3 class="mt-5">Our Visions</h3>
             <div class="p-2">1. Skill for employability and sustainable socio-economic development.</div>
             <div class="p-2">2. Provide demand driven skills training to prepare workforce for local and international labour market</div>
@@ -220,14 +223,14 @@
               <i class="fab fa-facebook-f"></i>
             </a>
       
-            <!-- Twitter -->
+            <!-- Whatsapp -->
             <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-whatsapp"></i>
             </a>
       
             <!-- Instagram -->
-            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button">
-              <i class="fab fa-instagram"></i>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: black;" href="#!" role="button">
+              <i class="fas fa-envelope"></i>
             </a>
       
             <!-- Github -->
@@ -239,12 +242,38 @@
         </div>
       
         <!-- Copyright -->
-          <p class="text-white p-4" style="border-bottom:1px solid gray; margin: 10px 20%;"><span class="text-dark">© 2020 Copyright : </span> <span class="text-info">GIBCE Latifabad No 9, Hyderabad</span> </p>
+          <p class="text-white p-2" style="border-bottom:1px solid gray; margin: 10px 20%;">
+            <span class="text-dark">© 2021 Copyright : </span>
+            <span class="text-info">GIBCE Latifabad No 9, Hyderabad</span>
+          </p>
     
         </div>
         <!-- Copyright -->
       </footer>
       
       <!--Footer Ends-->
+      <!--Bottom to Top Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button> 
+    <script>
+        mybutton = document.getElementById("myBtn");
+  
+  
+      window.onscroll = function() {scrollFunction()};
+  
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+  
+  
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!--Bottom to Top Button-->
 </body>
 </html>

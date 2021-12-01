@@ -1,3 +1,50 @@
-.p-5{
-    max-width: 1200px;
+#bg-img{
+    background-image: url(../img/board1.jpg);
+    height: 80vh;
+    width: 100%;
+    text-transform: uppercase;
+    background-size: cover;
+    background-position: center;
+}
+.overlay{
+background: rgba(0, 0, 0, 0.248);
+height: 80vh;
+width: 100%;
+}
+@media (max-width: 600px) {
+#bg-img {
+  height: 50vh !important; 
+}
+.overlay{
+  height:50vh !important; 
+  background: rgba(0, 0, 0, 0.322);
+}
+}
+#About {
+    padding-top: 20%;
+    font-weight: 600;
+    color: #fff;
+}
+
+#para {
+    padding-left:20% ;
+    padding-right:20% ;
+    line-height: 2;
+    font-size: 17px;
+    color: #fff;
+}
+ .course-1{
+  font-family: 'Poppins', sans-serif;
+    color: yellowgreen;
+    text-align: center;
+    padding-top: 10%;
+}
+.card-img-top{
+  font-family: 'Poppins', sans-serif;
+    width: 350px;
+    height: 250px;
+    margin: 0 auto;
+} 
+.disabledLink {
+pointer-events: none;
 }

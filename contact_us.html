@@ -5,40 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="shortcut icon" href="../GIBCE/img/icoForLink.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <link rel="stylesheet" href="../GIBCE/css/home.css">
+    <!-- B to T button starts-->
+  <link rel="stylesheet" href="../GIBCE/css/webTop.css">
+  <!--B to T button ends end-->    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <!--Saffan-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-    
 </head>
 <body>
     <!--Header starts-->
     <div class="container-fluid">
-        <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-lg-6">
-            <img src="./img/logo2.png" class="p-3" height="120" alt="">
-            <span class="lead">Govt: Institute Of Business And Commercial Education</span>
+      <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6">
+          <img src="./img/logo2.png" class="p-3" height="120" alt="">
+          <div class="lead" style="display: inline-flex;">
+            <strong>Govt: Institute Of Business And Commercial Education</strong>
           </div>
-          <div class="col-lg-6">
-            <span class="lead text-warning" style="margin-left:25%; cursor: pointer;;">
-              <i class="fas fa-map-marker-alt"></i> Latifabad No:9, Hyderabad
-            </span>
-            <span class="lead text-info" style="cursor: pointer;;">
-              <i class="fas fa-phone-alt"></i> 
-              1-800-346-6277
-            </span>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="lead text-warning" style=" cursor: pointer;;">
+            <i class="fas fa-map-marker-alt"></i> Latifabad No:9, Hyderabad
+          </div>
+          <div class="lead text-info" style=" cursor: pointer;;">
+            <i class="fas fa-phone-alt"></i> 0304-####### 
           </div>
         </div>
       </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fa9046;">
         <a class="navbar-brand text-dark" href="#">
             <img src="./img/GIBCE.png" height="40" alt="">
@@ -49,8 +47,8 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav text-center">
-            <li class="nav-item active">
-              <a class="nav-link text-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Home</a>
             </li>
             <li class="nav-item ">
               <a class="nav-link text-light" href="./Course.html">Courses</a>
@@ -58,64 +56,89 @@
             <li class="nav-item ">
                 <a class="nav-link text-light" href="About.html">About</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item active">
                 <a class="nav-link text-light" href="contact_us.html">Contact us</a>
             </li>
           </ul>
         </div>
       </nav>
-      <marquee  behavior="" direction="" class="bg-light p-3 lead">
+      <marquee onmouseover="this.stop();" onmouseout="this.start();" class="bg-light p-3 lead">
         <strong>
-          D.I.T( 1 Year Diploma In Information Technology ),
-          D.COM( 2 Years Diploma In Commerce ),      
-          NAVTTCC Programs
-        </strong>
+          <span class="text-info">D.I.T </span>(1 Year Diploma In Information Technology) &nbsp;&nbsp;
+          <span class="text-info">D.COM </span>(2 Years Diploma In Commerce) &nbsp;&nbsp;
+          <span class="text-info">ShortHand </span>(1 Year Diploma In English Shorthand & English TypeWriting) &nbsp;&nbsp;
+          <span class="text-info">NAVTTCC Programs </span>(C.I.T, Computer Accounting & Office Automation) &nbsp;&nbsp;
+         </strong>
       </marquee>
     <!--Header Ends-->
 
     <div id="header">
         <div class="overlay">
-        <h2 class="breadcrumbs-custom-title text-uppercase">Contact Us</h2>
-        <p class="pera">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+          <h3 class="text-center" id="About">Contact Us</h3>
+          <div class="text-center" id="para">________________________________</div>
         </div>
     </div>
-    <div class="container mt-5 mb-5">
+
+    <!--location-->
+    <div style="width: 100%;" class="p-5" >
+      <iframe width="100%"
+              height="500"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=9984+6F8,%20Latifabad%20Unit%209%20Latifabad,%20Hyderabad,%20Sindh%2071000+(Your%20Business%20Name)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+        <a href="https://www.gps.ie/sport-gps/">gps watches</a>
+      </iframe>
+    </div>
+
+    <div class="container mb-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="row">
                     <div class="col mt-2 mb-3">
                     <!-- Contact Ar mb-3ea Start -->
-                        <ul ><li class="txt">Institution Name : Govt Institution Of Business & commercial Education</li></ul>
+                        <ul>
+                          <li class="txt lead">Institute : <strong>Govt Institute Of Business & commercial Education</strong> </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mb-3">
-                        <ul ><li  class="txt">Address : Latifabad No:9 Hyderabad</li></ul>
+                        <ul>
+                          <li class="txt lead">Address : <strong>Latifabad No:9 Hyderabad</strong> </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mb-3">
-                        <ul ><li class="txt">Ph:Office : 022-3868152</li></ul>
+                        <ul>
+                          <li class="txt lead">Ph:Office : <strong>022-3868152</strong> </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mb-3">
-                        <ul ><li class="txt">Principal : 0334-2629651, 0300-3069385</li></ul>
+                        <ul>
+                          <li class="txt lead">Principal : <strong>0334-2629651, 0300-3069385</strong> </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mb-3">
-                        <ul ><li class="txt">Email Address : gibce@contact.com</li></ul>
+                        <ul>
+                          <li class="txt lead">Email Address : <strong>gibce@contact.com</strong> </li>
+                        </ul>
                     </div>
                 </div>
             <!-- Contact Area End -->
             </div>
             <!-- Contact Form Coding Start -->
-            <div class="col-md-6 ">
-                Name : <i class="fas fa-phone-alt"></i> <input type="text" placeholder="Enter You'r Name Here..." class="form-control mb-3">
-                Email : <i class="far fa-envelope"></i> <input type="text" placeholder="Enter Email Address Here..." class="form-control mb-3 ">
-                Comment : <textarea rows="6" placeholder="Type..." class="form-control"></textarea>
-                <input type="button" class="mt-2 btn btn-outline-info" value="submit">
+            <div class="col-md-6 lead">
+                Name <i class="far fa-user"></i><input type="text" placeholder="Enter Name Here..." class="form-control mb-3" required>
+                Email <i class="fas fa-at"></i><input type="email" placeholder="Enter Email Address Here..." class="form-control mb-3" required>
+                Message <i class="far fa-envelope"></i> <textarea rows="6" placeholder="Type..." class="form-control" required></textarea>
+                <input type="submit" class="mt-2 btn btn-outline-info" value="submit">
             </div>
             <!-- Contact Form Coding Start   -->
         </div>
@@ -123,7 +146,7 @@
 
     <!--Footer Starts-->
     <footer >
-        <div class="text-center bg-light" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="text-center bg-light" style="background-color: rgba(0, 0, 0, 0.2);">
         <div class="container p-4 pb-0">
           <!-- Social media -->
           <section class="mb-4">
@@ -132,14 +155,14 @@
               <i class="fab fa-facebook-f"></i>
             </a>
       
-            <!-- Twitter -->
+            <!-- Whatsapp -->
             <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!" role="button">
-              <i class="fab fa-twitter"></i>
+              <i class="fab fa-whatsapp"></i>
             </a>
       
             <!-- Instagram -->
-            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button">
-              <i class="fab fa-instagram"></i>
+            <a class="btn btn-primary btn-floating m-1" style="background-color: black;" href="#!" role="button">
+              <i class="fas fa-envelope"></i>
             </a>
       
             <!-- Github -->
@@ -151,12 +174,38 @@
         </div>
       
         <!-- Copyright -->
-          <p class="text-white p-4" style="border-bottom:1px solid gray; margin: 10px 20%;"><span class="text-dark">© 2020 Copyright : </span> <span class="text-info">GIBCE Latifabad No 9, Hyderabad</span> </p>
-    
-        </div>
-        <!-- Copyright -->
-      </footer>
+        <p class="text-white p-2" style="border-bottom:1px solid gray; margin: 10px 20%;">
+          <span class="text-dark">© 2021 Copyright : </span>
+          <span class="text-info">GIBCE Latifabad No 9, Hyderabad</span>
+        </p>
+      </div>
+      <!-- Copyright -->
+    </footer>
       
       <!--Footer Ends-->
+
+      <!--Bottom to Top Button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button> 
+    <script>
+        mybutton = document.getElementById("myBtn");
+  
+  
+      window.onscroll = function() {scrollFunction()};
+  
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+  
+  
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!--Bottom to Top Button-->
 </body>
 </html>
